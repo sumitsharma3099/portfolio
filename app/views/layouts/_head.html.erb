@@ -1,0 +1,41 @@
+<!-- app/views/layouts/_layout.html.erb -->
+
+<div class="bg-blue-500 text-white text-center py-8 border">
+  <div class="container mx-auto">
+    <!-- Main heading for the portfolio -->
+    <h1 class="text-4xl font-bold mb-2">Welcome to My Portfolio</h1>
+
+    <!-- Subheading with brief introduction -->
+    <p class="text-lg">I'm a Full Stack Developer with a 3-year journey in Ruby on Rails and ReactJS.</p>
+
+    <!-- Contact Images with Real Links -->
+    <div class="flex items-center justify-center mt-4">
+      <!-- Instagram link and image -->
+      <a href="https://www.instagram.com/sumit__sharma19/" target="_blank" rel="noopener noreferrer" class="mx-2">
+        <%= image_tag('instagram.png', alt: 'Instagram', class: 'w-8 h-8') %>
+      </a>
+
+      <!-- LinkedIn link and image -->
+      <a href="https://www.linkedin.com/in/sumit-sharma-099b7b193/" target="_blank" rel="noopener noreferrer" class="mx-2">  
+        <%= image_tag('linkedin.png', alt: 'LinkedIn', class: 'w-8 h-8') %>
+      </a>
+
+      <!-- WhatsApp link and image -->
+      <a href="https://api.whatsapp.com/send?phone=%2B919418815727" target="_blank" rel="noopener noreferrer" class="mx-2">
+        <%= image_tag('whatsapp.png', alt: 'WhatsApp', class: 'w-8 h-8') %>
+      </a>
+
+      <!-- Email link and image -->
+      <a href="mailto:ss828863@gmail.com" target="_blank" rel="noopener noreferrer" class="mx-2">
+        <%= image_tag('gmail.png', alt: 'Email', class: 'w-8 h-8') %>
+      </a>
+
+      <!-- GitHub link and image -->
+      <a href="https://github.com/sumitsharma3099/" target="_blank" rel="noopener noreferrer" class="mx-2">
+        <%= image_tag('github.png', alt: 'GitHub', class: 'w-8 h-8') %>
+      </a>
+
+      <!-- Add more social media images with real links as needed -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<!-- app/views/layouts/_navigation.html.erb -->
+
+<nav class="bg-gray-800 text-white p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- Navigation links on the left side -->
+    <div class="flex items-center space-x-4">
+      <!-- Home link with conditional styling -->
+      <%= link_to 'Home', root_path, class: "#{action_name == 'home' ? 'text-white font-bold text-lg' : 'hover:text-gray-300' }" %>
+
+      <!-- Projects link with conditional styling -->
+      <%= link_to 'Projects', projects_path, class: "#{action_name == 'projects' ? 'text-white font-bold text-lg' : 'hover:text-gray-300' }" %>
+
+      <!-- Experiences link with conditional styling -->
+      <%= link_to 'Experiences', experiences_path, class: "#{action_name == 'experiences' ? 'text-white font-bold text-lg' : 'hover:text-gray-300' }" %>
+
+      <!-- Skills link with conditional styling -->
+      <%= link_to 'Skills', skills_path, class: "#{action_name == 'skills' ? 'text-white font-bold text-lg' : 'hover:text-gray-300' }" %>
+
+      <!-- Resume link with conditional styling -->
+      <%= link_to 'Resume', resume_path, class: "#{action_name == 'resume' ? 'text-white font-bold text-lg' : 'hover:text-gray-300' }" %>
+
+      <!-- About link with conditional styling -->
+      <%= link_to 'About', about_path, class: "#{action_name == 'about' ? 'text-white font-bold text-lg' : 'hover:text-gray-300' }" %>
+    </div>
+
+    <!-- Profile section on the right side -->
+    <div class="flex items-center">
+      <!-- Dropdown menu for the profile -->
+      <div class="relative group">
+        <div class="cursor-pointer flex items-center">
+          <!-- Placeholder for profile picture -->
+          <div>
+            <%= image_tag('profile-pic.jpeg', alt: 'Profile', class: 'w-10 h-10 rounded-full bg-gray-400') %>
+          </div>
+          <span class="ml-2">Sumit Sharma</span>
+        </div>
+        <!-- You can add a dropdown menu or additional profile-related links here -->
+      </div>
+    </div>
+  </div>
+</nav>

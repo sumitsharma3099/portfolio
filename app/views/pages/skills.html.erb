@@ -1,0 +1,25 @@
+<!-- app/views/skills/index.html.erb -->
+
+<section class="bg-gray-100 py-16">
+  <div class="container mx-auto">
+    <!-- Main heading for the Skills section -->
+    <h2 class="text-3xl font-bold mb-8">Skills</h2>
+
+    <!-- Skills List using a grid layout -->
+    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Loop through each skill and display a list item for each -->
+      <% skills_list.each do |skill| %>
+        <!-- Skill Item with name and description -->
+        <li class="bg-white p-4 rounded-lg shadow-md mb-4">
+          <!-- Skill name -->
+          <h3 class="text-lg font-semibold mb-2"><%= skill[:name] %></h3>
+          
+          <!-- Skill description -->
+          <p class="text-gray-700"><%= skill[:description] %></p>
+          
+          <!-- You can add proficiency level or any other relevant details here -->
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</section>
